@@ -1,0 +1,231 @@
+*{ 
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(osmon.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.highway{
+    height: 200px;
+    width: 600%;
+    background-image: url(road.jpg);
+    background-repeat: repeat-x;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    animation:  highway 5s linear infinite;
+}
+
+.city{
+    background-image: url(shaxar.png);
+    height: 250px;
+    width: 500%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    display: block;
+    z-index: 1;
+    animation: city 20s linear infinite;
+}
+
+.car {
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 99;
+
+}
+
+.car img {
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+
+.wheel {
+    left: 50%;
+    bottom: 178px;
+    position: absolute;
+    z-index: 99;
+}
+
+.wheel img {
+    width: 73px;
+    height: 73px;
+    animation: wheel 1s linear infinite;
+}
+
+.back-wheel{
+    position: absolute;
+    left: -165px;
+}
+.right-wheel{
+    position: absolute;
+    left: 80px;
+}
+
+@keyframes highway {
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+@keyframes city {
+    100% {
+        transform: translateX(-1400px);
+    }
+}
+
+
+@keyframes car {
+    100% {
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+@keyframes wheel {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.car2{
+    width: 400px;
+    left: -10%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 3;
+}
+.car2 img {
+    width: 100%;
+
+    animation: car1 7s linear infinite;
+}
+
+.whel {
+    left: -10%;
+    bottom: 178px;
+   transform: translateX(-50%);
+   position: absolute;
+   z-index: 3;
+}
+
+.whel img {
+    width: 72px;
+    height: 72px;
+    animation: whel  7s linear infinite;
+}
+.orqa-whel{
+    position: absolute;
+    left: -165px;
+
+}
+
+.oldi-whel {
+    position: absolute;
+    left: 80px;
+}
+
+@keyframes car1 {
+    100% {
+        transform: translateY(-1px)
+    }
+    50% {
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+@keyframes car1 {
+    0% {  transform: translateX(20px) ;}
+    30%{transform: translateX(300px) translateY(-x);}
+    60%{transform: translateX(800px) translateY(-30px); }
+    90%{transform: translateX(1400px) translateY(-20px);}
+    100%{transform: translateX(1600px);}
+}
+@keyframes whel {
+    0%{transform: translateX(20px) rotate(30deg);}
+    30%{transform: translateX(300px)translateY() rotate(500deg) ;}
+    60%{transform: translateX(800px) translateY(-40px) rotate(600deg);}
+    90%{transform: translateX(1400px) translateY(-20px) rotate(360deg);}
+    100%{transform:translateX(1600px); }
+}
+
+.car3{
+width: 400px;
+left: 20%;
+bottom: 10px;
+transform: translateX(-50%);
+position: absolute;
+z-index: 99;
+}
+
+.car3 img {
+    width: 100%;
+    animation: car3 5s linear infinite;
+}
+
+.bolon {
+    left: 20%;
+    bottom: 90px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 3;
+}
+.bolon img{
+ width: 72px;
+ height: 72px;
+ animation: bolon 5s linear infinite;    
+}
+
+.bolon1 {
+    position: absolute;
+    left: -165px;
+
+}
+
+.bolon2{
+    position: absolute;
+    left: 80px;
+}
+
+@keyframes car3 {
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }    0%{
+        transform: translateY(-1px);
+
+    }
+}
+
+@keyframes bolon {
+    100%{
+        transform: rotate(500deg);
+    }
+}

@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: claibri sans-serif;
+    font-weight: normal;
+    color: rgba(0,0,0,0.911);
+}
+
+body{
+    position: relative;
+    background-color: black;
+}
+h1{
+    user-select: none;
+    color: #fff;
+    font-size: 40px;
+    margin: 10px 0;
+}
+#pop-up{
+    position: relative;
+    top: 200px;
+    width: 700px;
+    margin: 0  auto;
+    text-align: center;
+    margin-left: 1.5px;
+}
+
+#pop-up .container{
+    background: red;
+    padding: 30px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+.container p{
+    margin-bottom: 10px;
+}
+
+
+#pop-up input{
+    padding: 10px;
+    border: 0;
+    border-radius:10px 0px 0px 10px;
+    border: 1px solid #000;
+    font-size: 18px;
+}
+
+button{
+    padding: 10px;
+    border: 0;
+    color: seashell;
+    background: #ee1c1c;
+    border-top: 2px solid #000;
+    border-right : 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-left: -5px;
+    border-radius: 0 10px 10px 0;
+    font-size: 18px;
+
+}
+.croos{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #000;
+    color: #ddd;
+    font-weight: bold;
+    border-radius: 11px;
+    width: 42px;
+    height: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+#pop-up{
+    top: -500px;
+    transform-origin: 10px 10px;
+    animation: drop 3s ease-in forwards, swim 5s 1.2s ease forwards;
+
+
+}
+.text {
+    position: absolute;
+    color: #ddd;
+    top: 300px;
+    left: 40%;
+    z-index: -1;
+    font-size: 40px;
+    font-family: 'Chiller', sans-serif;
+    animation: dead 7s forwards;
+    padding-left: 00px;
+    margin-right: 600px;
+    
+}
+
+@keyframes drop {
+    0% {opacity: 0;}
+   70%{transform: translateY(700px); opacity: 1;}
+   100%{transform:translateY(-350px);  opacity: 1;}
+}
+
+@keyframes swim {
+    0%{transform: translateY(650px) rotateZ(0deg) ;}
+    40%{transform: translateY(650px) rotateZ(80deg) ;}
+    60%{transform: translateY(650px) rotateZ(50deg);}
+    60%{transform: translateY(650px) rotateZ(-10px);}
+    80%{transform: translateY(650px) rotateZ(00deg);}
+    100%{transform: translateY(650px)rotateZ(-300px);}
+}
+
+
+
+
+@keyframes dead {
+    0%{opacity: 0;}
+    40%{opacity: 0;}
+    60%{opacity: 0;}
+    80%{opacity: 0;}
+    100%{opacity: 1; color: #ee1c1c;}
+}
+
+
+
+
+body{
+    position: relative;
+    background-color: black;
+}
+
+
+
+h2{
+    user-select: none;
+    color: #fff;
+    font-size: 40px;
+    margin: 10px 0;
+
+}
+
+
+
+#pop-up2{
+    position: relative;
+    top: 200px;
+    width: 700px;
+    margin: 0  auto;
+    text-align: center;
+    margin-right: 20px;
+}
+
+
+#pop-up2 .container2{
+    background: red;
+    padding: 30px;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+}
+
+#pop-up2 input{
+    padding: 10px;
+    border: 0;
+    border-radius:10px 0px 0px 10px;
+    border: 1px solid #000;
+    font-size: 18px;
+}
+
+
+
+.cross{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #000;
+    color: #ddd;
+    font-weight: bold;
+    border-radius: 11px;
+    width: 42px;
+    height: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.container2 h4{
+    margin-bottom: 20px;
+}
+
+
+#pop-up2{
+    top: -500px;
+    transform-origin: 10px 10px;
+    animation: ikki 3s ease-in forwards, ikki2 5s 1.2s ease forwards;
+
+
+}
+@keyframes ikki {
+    0% {opacity: 0;}
+   70%{transform: translateY(500px); opacity: 1;}
+   100%{transform:translateY(2100px);  opacity: 1;}
+}
+
+@keyframes ikki2 {
+    0%{transform: translateY(500px) rotateZ(0deg) ;}
+    40%{transform: translateY(500px) rotateZ(80deg) ;}
+    60%{transform: translateY(500px) rotateZ(50deg);}
+    60%{transform: translateY(500px) rotateZ(-10deg);}
+    80%{transform: translateY(500px) rotateZ(00deg);}
+    100%{transform: translateY(500px)rotateZ(-800px);}
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
